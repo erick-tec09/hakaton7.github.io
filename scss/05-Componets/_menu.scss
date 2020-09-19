@@ -1,0 +1,39 @@
+.container-menu{
+ 
+   
+    position: relative;
+   display: none;
+    .menu__close{
+      
+    }
+    .menu{
+        @include flex-colum;
+        background: $Bg;
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        .menu__icon{
+
+            color: $TextWhite;
+            font-size: 30px;
+            position: absolute;
+            top: 20%;
+            right: 20%;
+            cursor: pointer;
+        }
+       
+        .menu__list{
+            padding: 15px 0px;
+            margin: 10px 0px;
+
+            .menu__link{
+
+                font-family: $FontSecundary;
+                color: $TextWhite;
+                font-family:  $FontSecundary;
+            }
+        }
+    }
+}
