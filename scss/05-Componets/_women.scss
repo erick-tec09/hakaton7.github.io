@@ -1,0 +1,42 @@
+.women{
+
+    &__title{
+
+
+        font-family: $font-family;
+        color: $color-primary;
+        font-size: $font-size;
+        margin: 10px 0px;
+        font-weight:  bold;
+      
+
+
+    }
+
+    &__content{
+
+        @include  flex-colum;
+        justify-content: center;
+        
+
+    }
+    &__img{
+
+        width: 250px;
+        margin: 0px auto;
+
+    }
+    &__lists{
+
+        @include  flex-colum;
+        justify-content: center;
+
+    }
+    &__icons{
+      
+
+    }
+    &__icons{
+
+    }
+}

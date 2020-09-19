@@ -1,0 +1,17 @@
+.footer{
+
+    padding: 30px 0px;
+      background: $bg-primary;
+      &__p{
+
+        font-family: $font-family;
+        font-weight: 400;
+        color: $color-primary;
+        padding: 20px 0px;
+
+        font-size: 16px;
+        &--size{
+            font-size: 13px;
+        }
+      }
+}

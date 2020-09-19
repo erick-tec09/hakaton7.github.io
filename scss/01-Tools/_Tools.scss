@@ -1,20 +1,61 @@
 @mixin flex-row {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+   
 
 }
 
 @mixin flex-colum {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
+ 
 }
 
 
 
+.btn{
+
+     background: $bg-primary;
+}
+
+.input{
+
+   
+  
+    padding: 10px 0px;
+    color: $color-primary;
+    background: $color-white;
+    text-align: center;
+    padding: 10px 10px;
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 13px;
+    margin: 10px 0px;
+    transition: all .6s;
+    &--footer{
+
+        color: $color-primary;
+        border: 1px solid $color-primary;
+        background: $bg-primary;
+    }
+    
+   
+    @media (min-width: 768px) { 
+
+        margin: 10px 10px;
+    
+    }
+    &--color{
+        background: $bg-primary;
+        padding: 10px 10px;
+       
+        cursor: pointer;
+        &:hover{
 
 
+            background: #ffee04;
+        
+       
+        }
+    }
+}

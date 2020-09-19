@@ -1,122 +1,89 @@
 .hero{
-   
+
+
+    background: url("../../images/hero.jpg") no-repeat;
     width: 100%;
-    
-    
-  
-  
-
-    .hero__title{
-
-        font-family: $FontPrimary;
-        color: $ColorPrimary;
-        
-        font-size: 2.3em;
-        margin-top: 50px;
-      
-        .hero__bold{
-
-            color: $ColorSecundary;
-        }
-    }
-    .hero__subtitle{
-
-      
-        font-family: $FontSecundary;
-        color: $Bg;
-        font-size: 12px;
-        font-weight: normal;
-      
-    }
-    .hero__desc{
-
-        margin: 10px 0px;
-        font-family: $FontSecundary;
-        color: $Bg;
-        font-size: 13px;
-        font-weight: normal;
-       
-        
-    }
-    .hero__icon{
-        color: $Bg;
-        font-size: 18px;
-        transition:  all 0.5s;
-        margin-right: 10px;
-        margin-bottom: 10px;
-        cursor: pointer;
-        &:hover{
-            color: $ColorSecundary;
-        }
-    }
-    .hero__img{
-
-        margin-top: 30px;
-       display: block;
-        width: 250px;
-        text-align: center;
-        margin: 20px auto;
-        
-    }
-}
-
-
-@media (min-width: 576px) {  }
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
-
-
-
-    
-    .hero{
-     
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        }
-        .hero__title{
-            font-size: 3em;
-        }
-        .hero__desc{
-
-            width: 300px;
-            text-align: left;
-           
-            
-        }
-        .hero__icon{
-
-        }
-    }
+    background-size: cover;
  
 
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) {  
-    
    
-    .hero{
-     
+    
 
-        background: yellow;
-      
-        }
-        .hero__title{
-           
-        }
-        .hero__desc{
+   
 
-            width: 500px;
-           
-           
-            
-        }
-        .hero__icon{
-            
-        }
+    &__title{
+
+        
+        
+        font-family: $font-family;
+        font-size: $font-size *2;
+        color: $color-black;
+        font-weight: 400;
+        padding: 20px 0px;
+        margin-top: 60px;
+        @media (min-width: 768px) { 
+
+            margin-top: 100px;
     }
+        
+
+    }
+    &__desc{
+
+        font-family: $font-family;
+        font-size: $font-size ;
+        color: $color-black;
+        font-weight: lighter;
+        padding: 20px 0px;
+        
+        font-size: $font-size ;
+        &--size{
+
+             font-size: 12px;
+            
+
+        }
+        
+    }
+    &__form{
 
 
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {  }
+        @include flex-colum ;
+
+        @media (min-width: 768px) { 
+
+            @include flex-row ;
+            justify-content: center;
+            justify-items: center;
+
+        
+        }
+
+
+
+    }
+    &__img{
+
+
+
+        
+
+        width: 200px;
+        
+        transform: rotate(30deg);
+        display: none;
+        text-align: right;
+        
+        @media (min-width: 992px) { 
+
+            display: block;
+            top: 300px;
+            right: 10%;
+            position: absolute;
+
+        
+        }
+
+
+    }
+}
